@@ -1,0 +1,24 @@
+{
+  "name": "Api",
+  "version": "1.0.0",
+  "description": "Api`s for ecommerce website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "amgad atef mohamed",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "celebrate": "^7.0.6",
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "lodash": "^4.17.10",
+    "mysql2": "^1.4.1",
+    "open": "0.0.5",
+    "sequelize": "^4.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
