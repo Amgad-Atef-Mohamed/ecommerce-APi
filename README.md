@@ -2,15 +2,13 @@ A E-commerce api built using Node.js, Express and ORM (sequelizejs ) using MYSQL
 # Features
 * [x] **temListings** - listing of the store items indicating price, name, and description for each item. Api must accept paging , max items per page as a parameters. 
 ```
- http://localhost:1337/api/v1/items?page=1&perPage=10
-
 GET /api/v1/items?page=1&perPage=10
-Host: localhost:1337
+Host: https://whispering-inlet-26689.herokuapp.com
 ```
 * [x] **insertItem**  - The user can select any quantity of various items to place in the cart.
 ```
 POST /api/v1/items/:itemId/cart
-Host: localhost:1337
+Host: https://whispering-inlet-26689.herokuapp.com
 Content-Type: application/json
 {
     customerId: 1,
@@ -20,7 +18,7 @@ Content-Type: application/json
 * [x] **removeItem**  - The user can remove items from his cart .
 ```
 DELETE /api/v1/items/:itemId/cart
-Host: localhost:1337
+Host: https://whispering-inlet-26689.herokuapp.com
 Content-Type: application/json
 {
     customerId: 1
@@ -29,7 +27,7 @@ Content-Type: application/json
 * [x] **editCart**    -  edit quantity of any of cart items. Or inserting new items in cart
 ```
 PUT /api/v1/items/:itemId/cart
-Host: localhost:1337
+Host: https://whispering-inlet-26689.herokuapp.com
 Content-Type: application/json
 {
   customerId: 1,
@@ -46,12 +44,12 @@ then will be
 * [x] **getCartDetails** -   returns summary of the items he/she previously selected  along with quantity also total price of selected items
 ```
 GET /api/v1/carts?customerId=1
-Host: localhost:1337
+Host: https://whispering-inlet-26689.herokuapp.com
 ```
 * [x] **submitOrder** -  checkout the selected items in users cart and place an order. ,Accepting  address and telephone number as required parameters, if the user places the transaction, his/her store credits should be updated in the database and the transaction information should be saved in the Order table. Returning new user credit after the order in case of success or failed message in case of failure.
 ```
 POST /api/v1/customers/:customerId/orders
-Host: localhost:1337
+Host: https://whispering-inlet-26689.herokuapp.com
 Content-Type: application/json
 {
     telephone: '012...',
@@ -61,7 +59,7 @@ Content-Type: application/json
 * [x] **customerOrderHistory** - take customer id as parameter and returns all orders of this customer. Must accept paging and max items per page as a parameter.
 ```
 GET /customers/:customerId/orders
-Host: localhost:1337
+Host: https://whispering-inlet-26689.herokuapp.com
 ```
 
 > # Installation steps:
