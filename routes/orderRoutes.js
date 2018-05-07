@@ -13,8 +13,9 @@ const express = require('express'),
 orderRouter.get('/customers/:customerId/orders', function(req, res, next){
 
   const { customerId }  = req.params;
+  const { page, perpage }  = req.query;
 
-  models.order.findAll(_.merge({ where: { customer_id: { $eq : customerId} } }, helpers.determinePagination(1,10)))
+  models.order.findAll(_.merge({ where: { customer_id: { $eq : customerId} } }, helpers.determinePagination(page, perpage)))
     .then(customerOrders => {
       return res.status(200).json(customerOrders);
     })

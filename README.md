@@ -58,7 +58,7 @@ Content-Type: application/json
 ```
 * [x] **customerOrderHistory** - take customer id as parameter and returns all orders of this customer. Must accept paging and max items per page as a parameter.
 ```
-GET /customers/:customerId/orders
+GET /customers/:customerId/orders?page=1&perPage=10
 Host: https://whispering-inlet-26689.herokuapp.com
 ```
 
