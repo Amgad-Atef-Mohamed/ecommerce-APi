@@ -2,7 +2,7 @@ A E-commerce api built using Node.js, Express and ORM (sequelizejs ) using MYSQL
 # Features
 * [x] **temListings** - listing of the store items indicating price, name, and description for each item. Api must accept paging , max items per page as a parameters. 
 ```
-GET /api/v1/items?page=1&perPage=10
+GET /api/v1/items?page=1&perpage=10
 Host: https://whispering-inlet-26689.herokuapp.com
 ```
 * [x] **insertItem**  - The user can select any quantity of various items to place in the cart.
